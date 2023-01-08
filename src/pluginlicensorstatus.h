@@ -24,13 +24,13 @@ public:
 
     //juce::String getProductID () override;
     //juce::String getCompanyID ();
-    //bool witholdInfo ();
+    //bool withholdInfo ();
     //juce::String getClientLanguage ();
     //juce::RSAKey getPublicKey () override;
 
     juce::String getPrivateInt (int value)
     {
-        if (witholdInfo ())
+        if (withholdInfo ())
         {
             return "x";
         }
@@ -39,13 +39,13 @@ public:
 
     juce::String getPrivateBool (bool value)
     {
-        if (witholdInfo ()) { return "x"; }
+        if (withholdInfo ()) { return "x"; }
         return value ? "1" : "0";
     }
 
     juce::String getPrivateString (juce::String value)
     {
-        if (witholdInfo ()) { return "x"; }
+        if (withholdInfo ()) { return "x"; }
         return value;
     }
 
