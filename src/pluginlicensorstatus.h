@@ -278,7 +278,7 @@ public:
     {
         return "MOFOF8M2P1S";
     }
-    bool PluginLicensorStatus::witholdInfo ()
+    bool PluginLicensorStatus::withholdInfo ()
     {
         return false;
     }
