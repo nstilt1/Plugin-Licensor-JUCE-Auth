@@ -1,4 +1,4 @@
-#include "PluginLicensorstatus.h"
+#include "PluginLicensorStatus.h"
 PluginLicensorStatus::PluginLicensorStatus() {}
 
 /**
