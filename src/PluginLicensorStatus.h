@@ -10,10 +10,13 @@
 */
 #include <JuceHeader.h>
 #pragma once
+
+namespace juce
+{
 class PluginLicensorStatus : public juce::OnlineUnlockStatus
 {
 public:
-    PluginLicensorStatus () = default;
+    PluginLicensorStatus ();
 
     struct PLKeyFileData
     {
@@ -34,6 +37,13 @@ public:
     juce::String PluginLicensorStatus::getCompanyID();
     juce::String PluginLicensorStatus::getProductID() override;
     juce::RSAKey PluginLicensorStatus::getPublicKey() override;
+
+    void saveState (const juce::String&) override
+    {
+
+    }
+
+    juce::String getState () override { return {}; }
     
 
     /**
@@ -398,4 +408,7 @@ private:
     juce::ValueTree status;
     juce::ApplicationProperties props;
 
+    //JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (PluginLicensorStatus)
+
 };
+}
