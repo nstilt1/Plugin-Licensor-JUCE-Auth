@@ -2,6 +2,7 @@
 C++ client side library for verifying license codes with Plugin Licensor
 
 # This needs testing
+This branch has code that was originally copied from JUCE's Traktion Marketplace Status, but it doesn't work. The next test will be to implement the header file I made by using a structure similar to the `OnlineUnlockStatusTutorial_02.h`
 
 The `getStateAndSaveState` code might not be required, but I don't know for sure. I don't even know if it needs to be implemented.
 
